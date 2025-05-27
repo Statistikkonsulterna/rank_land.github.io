@@ -20,6 +20,29 @@
     <script src="libs/vizabi-ddfcsv-reader.js"></script>
     <script src="libs/vizabi-csv-reader.js"></script>
     <script src="libs/vizabi-excel-reader.js"></script>
+
+        <style>
+      .buttonb {
+        border: none;
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s;
+      }
+      
+      .tab-bubble {background-color: #789e9e;}
+      .tab-bar {background-color: #60849a;}
+
+      h1 {
+        text-align: center;
+      }
+      </style>
   </head>
 
  <body style="width: 90%; max-width: 1400px; height: 100%; margin: 0 auto; font-family: 'Segoe UI black';">
@@ -38,4 +61,8 @@
 
     </script>
   </body>
+    <div class="tabs">
+  <a href="https://statistikkonsulterna.github.io/bransch_v1.github.io/#$chart-type=bubble_countries&url=v2"><button class= "buttonb tab-bubble" id="tab-bubble">Bubbeldiagram</button></a>
+<a href="https://statistikkonsulterna.github.io/rank_land.github.io/"><button class= "buttonb tab-bar" id="tab-bar">Rankat stapeldiagram</button></a>
+</div>
 </html>
