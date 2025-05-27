@@ -9,7 +9,7 @@ var CONFIG = {
  },
  "locale": {
   "filePath": "assets/translation/",
-  "id": "en"
+  "id": "sv-SE"
  },
  "state": {
   "entities": {
@@ -78,7 +78,7 @@ var CONFIG = {
     "autoconfig": {},
     "data": "data",
     "palette": {
-     "_default": "#ffb600"
+     "_default": "#789e9e"
     },
     "paletteHiddenKeys": [],
     "paletteLabels": null,

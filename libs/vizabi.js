@@ -13283,7 +13283,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var defaultPalettes = {
   "_continuous": {
-    "_default": "#ffb600",
+    "_default": "#789e9e",
     "0": "#8c30e8", //"hsl(270, 80%, 55%)",
     "25": "#30a3e8", //"hsl(202.5, 80%, 55%)",
     "50": "#30e85e", //"hsl(135, 80%, 55%)",
@@ -13291,7 +13291,7 @@ var defaultPalettes = {
     "100": "#e83030" //"hsl(0, 80%, 55%)"
   },
   "_discrete": {
-    "_default": "#ffb600",
+    "_default": "#789e9e",
     "0": "#4cd843",
     "1": "#e83739",
     "2": "#ff7f00",
@@ -13306,7 +13306,7 @@ var defaultPalettes = {
     "11": "#7fb5ed"
   },
   "_default": {
-    "_default": "#ffb600"
+    "_default": "#789e9e"
   }
 };
 
@@ -17788,12 +17788,12 @@ var About = _dialog2.default.extend("about", {
     var updated = new Date(parseInt(_globals2.default.build));
 
     this.element = d3.select(this.element);
-    this.element.select(".vzb-about-text0").html("This chart is made with Vizabi,");
-    this.element.select(".vzb-about-text1").html("a project by <a href='http://gapminder.org' target='_blank'>Gapminder Foundation</a>");
-    this.element.select(".vzb-about-version").html("<a href='https://github.com/Gapminder/vizabi/releases/tag/v" + version + "' target='_blank'>Version: " + version + "</a>");
+    this.element.select(".vzb-about-text0").html("This chart is powered by Vizabi,");
+    this.element.select(".vzb-about-text1").html("(<a href='http://gapminder.org' target='_blank'>Gapminder Foundation</a>)");
+    this.element.select(".vzb-about-version").html("Implementation by,");
     this.element.select(".vzb-about-updated").html("Build: " + d3.time.format("%Y-%m-%d at %H:%M")(updated));
     this.element.select(".vzb-about-report").html("<a href='https://getsatisfaction.com/gapminder/' target='_blank'>Report a problem</a>");
-    this.element.select(".vzb-about-credits").html("<a href='https://github.com/Gapminder/vizabi/graphs/contributors' target='_blank'>Contributors</a>");
+    this.element.select(".vzb-about-updated").html("<a href='https://www.statistikkonsulterna.se/'target='_blank'> Statistikkonsulterna Väst AB</a>");
 
     //versions
     var data = _data2.default;
@@ -17807,8 +17807,8 @@ var About = _dialog2.default.extend("about", {
     var toolsEl = this.element.select(".vzb-about-tool");
     toolsEl.html("");
     toolsEl.append("p").text("Tool: " + toolData.name);
-    toolsEl.append("p").text("-version: " + toolData.version);
-    toolsEl.append("p").text("-build: " + toolData.build);
+    toolsEl.append("p").text("-version: " + "Gapminder Tools Offline v.5.0.0");
+    toolsEl.append("p").text("-build: " + "2025-05-27 at 09:00");
 
     var readerData = data.instances.map(function (dataInstance) {
       var data = {};
