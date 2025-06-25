@@ -125,7 +125,7 @@
     "treemenu/other_datasets": "Mer data...",
     "indicator/_default/axis": "Konstant",
     "indicator/_default/size": "En storlek",
-    "indicator/_default/color": "Enkel färg",
+    "indicator/_default/color": "Fast färg",
     "indicator/_default/side": "One side",
     "description/_default/color": "Alla markers har samma färg",
     "description/_default/size": "Alla markers har samma storlek",
